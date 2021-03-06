@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+<TextView
+    android:id="@+id/textView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="草你妈"
+    android:gravity="center"
+    android:textSize="22sp"/>
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="button1"/>
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="button2"/>
+    <ProgressBar
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:progress="20"
+        android:progressDrawable="@color/colorPrimary"/>
+</LinearLayout>

@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/dp20"
+    android:layout_marginRight="@dimen/dp20"
+    android:layout_marginBottom="@dimen/dp43">
+
+    <TextView
+        android:id="@+id/content_area"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="评论区"
+        android:textSize="@dimen/dp16"
+        android:textColor="#1F2329"
+        android:textStyle="normal"
+        android:layout_marginTop="@dimen/dp12"
+        android:layout_marginStart="@dimen/dp16" />
+
+    <ImageView
+        android:layout_marginTop="@dimen/dp18"
+        android:padding="@dimen/dp3"
+        android:layout_width="@dimen/dp16"
+        android:layout_height="@dimen/dp16"
+        android:src="@mipmap/ic_close"
+        android:layout_marginEnd="16dp"
+        android:layout_alignParentEnd="true"/>
+
+
+    <RelativeLayout
+        android:layout_marginEnd="@dimen/dp12"
+        android:layout_marginStart="@dimen/dp12"
+        android:layout_marginBottom="@dimen/dp12"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone">
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/character_comment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="文字评语"
+        android:layout_below="@+id/content_area"
+        android:textStyle="normal"
+        android:textColor="#3370FF"
+        android:textSize="14sp"
+        android:layout_marginStart="@dimen/dp17"
+        android:layout_marginTop="@dimen/dp24"/>
+
+    <TextView
+        android:id="@+id/voice_comment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/content_area"
+        android:text="语音评语"
+        android:textStyle="normal"
+        android:textSize="14sp"
+        android:textColor="#1F2329"
+        android:layout_toRightOf="@+id/character_comment"
+        android:layout_marginLeft="@dimen/dp32"
+        android:layout_marginTop="@dimen/dp24"/>
+
+    <View
+        android:id="@+id/comment_line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp1"
+        android:layout_below="@id/voice_comment"
+        android:layout_marginTop="@dimen/dp11"
+        android:layout_marginLeft="@dimen/dp16"
+        android:layout_marginRight="@dimen/dp16"
+        android:background="#BBBFC4"/>
+
+    <ImageView
+        android:id="@+id/pic_select"
+        android:layout_width="@dimen/dp18"
+        android:layout_height="@dimen/dp15"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/comment_line"
+        android:layout_marginTop="@dimen/dp16"
+        android:layout_marginEnd="@dimen/dp19"
+        android:src="@mipmap/ic_pic_selected"/>
+
+    <EditText
+        android:id="@+id/comment_edit"
+        android:layout_below="@id/pic_select"
+        android:layout_marginTop="@dimen/dp12"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minLines="3"
+        android:maxLines="6"
+        android:gravity="top"
+        android:background="#EFF0F1"
+        android:scrollbars="vertical"/>
+
+    <ImageView
+        android:id="@+id/comment_model_save"
+        android:src="@mipmap/ic_save"
+        android:padding="@dimen/dp3"
+        android:layout_width="@dimen/dp24"
+        android:layout_height="@dimen/dp24"
+        android:layout_marginLeft="@dimen/dp18"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/dp12"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/sp14"
+        android:textStyle="normal"
+        android:textColor="#787F88"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@id/comment_model_save"
+        android:layout_marginLeft="@dimen/dp4"
+        android:text="保存为模板"/>
+
+    <Button
+        android:id="@+id/comment_current_send"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="发送"
+        android:padding="@dimen/dp2"
+        android:textStyle="normal"
+        android:textSize="@dimen/sp14"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/dp16"/>
+
+    <Button
+        android:id="@+id/comment_all_send"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="全班发送"
+        android:padding="@dimen/dp2"
+        android:textStyle="normal"
+        android:textSize="@dimen/sp14"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/dp67"/>
+
+
+</RelativeLayout>

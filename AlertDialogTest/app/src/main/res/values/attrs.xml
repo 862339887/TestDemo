@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="HorizontalProgressBar">
+        <attr name="hpb_unReachColor" format="color"/>
+        <attr name="hpb_unReachHeight" format="dimension"/>
+        <attr name="hpb_reachColor" format="color"/>
+        <attr name="hpb_reachHeight" format="dimension"/>
+        <attr name="hpb_textColor" format="color"/>
+        <attr name="hpb_textSize" format="dimension"/>
+        <attr name="hpb_textOffset" format="dimension"/>
+    </declare-styleable>
+
+</resources>
+
